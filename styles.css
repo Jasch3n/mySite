@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+}
+.index-h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+.index-h2 { color:green; margin: 10px; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+.regular-courier {color:black; margin: 10px; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+
+.navbar{
+    background-color : SeaGreen;
+}
+
+.nav-item{
+    color : white;
+}
+
+.navbar-brand{
+    font-weight : bold;
+    color : PaleGoldenRod;
+}
+.index-intro{
+    text-align : center;
+    font-size : 5em;
+    margin : 0;
+    padding : 0;
+    position: relative;
+    left : 50%;
+    top :190px;
+    transform : translate(-50%, 0%);
+
+}
+body{
+    min-height : 100%;
+    background-image : url("plant3.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
+    padding : 0;
+    margin : 0;
+}
+
+.music-body{
+    height : 30px;
+    width : 100%;
+}
+
+.song1{
+    position : relative;
+    transform : translate(0%, 38%);
+    height : 200px;
+    width:200px;
+    margin : 0px;
+}
+.song2{
+    position : relative;
+    left : 300px;
+    top : -124px;
+    height : 200px;
+    width:200px;
+    margin : 0px;
+}
