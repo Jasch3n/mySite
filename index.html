@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
-        <title>My Webpage</title>
+        <title>home</title>
     </head>
-    <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">Navigation</a>
-          <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>-->
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="index.html">Home</a>
-              <a class="nav-item nav-link active" href="music.html">Music</a>
-              <a class="nav-item nav-link active" href="gaming.html">Gaming</a>
-              <a class="nav-item nav-link active" href="rickroll.html">Interesting Stuff</a>
-            </div>
-          </div>
-    </nav>
-    <body class = "index-body">
-        <div class="index-intro">
-          <h1 class = "index-h1">Welcome to Jasper's Webpage.</h1>
-          <h2 class = "index-h2">As you can tell, I love cactus.</h2>
-        </div>
-    </body>
+
+    <div class="container-fluid" id="index">
+      <div id="side-bar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="navitem" href="index.html">home</a> 
+        <a class="navitem" href="static/music2.html">music</a>
+        <a class="navitem" href="static/physics.html">physics</a>
+        <a class="navitem" href="static/poetry.html">poetry</a>
+        <a class="navitem" href="static/about.html">about</a>
+      </div>
+      <div class="homepage-title">
+        <h3 id="homepage-j">J</h3> <h3 id="homepage-a">A</h3> <h3 id="homepage-s">S</h3>
+        <h3 id="homepage-p">P</h3> <h3 id="homepage-e">E</h3> <h3 id="homepage-r">R</h3>
+        <h3 id="homepage-c">C</h3> <h3 id="homepage-h">H</h3> <h3 id="homepage-e-2">E</h3> <h3 id="homepage-n">N</h3>
+        <h5 class="homepage-text">welcome to my space</h5>
+      </div>
+      
+      <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+    </div>
+
+    <!-- remember to make the texts responsive to screen sizes!!!! -->
+    
+    <script>
+      function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+      }
+    </script>
+
 
 
 </html>
