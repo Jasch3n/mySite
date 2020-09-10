@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../styles.css" rel="stylesheet">
+        <title>articles</title>
+    </head>
+
+    <div class="container-fluid">
+      <div id="side-bar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="navitem" href="../index.html">home</a> 
+        <a class="navitem" href="music2.html">music</a>
+        <a class="navitem" href="articles.html">articles</a>
+        <a class="navitem" href="poetry.html">poetry</a>
+        <a class="navitem" href="about.html">about</a>
+      </div>
+      
+      <div class = "subpage-body">
+        <div class="subpage-title">
+          <h1>articles</h1>
+        </div>
+        <div class="article-list">
+            <ul class="list-unstyled">
+                <!-- <li class="media" onclick ="location.href='../articles/article-template.html';">
+                    <img class="mr-3" src="../PicsAudios/blackhole1.jpg" alt="placeholder img">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1"> placeholder 1</h5>
+                        asldsalkdjas dwaidjslakd awidlsa aowidhoasiddhawdawd  asuidgalwdgla sdlawohdas dohaiwdsafd;aowh ildasvdfawyidjln awdgyaw;dh klajn
+                    </div>
+                </li> -->
+                <li class="media" onclick ="location.href='../articles/Trigonometry.pdf';">
+                  <img class="mr-3" src="../PicsAudios/unit-circle-resized.png" alt="placeholder img">
+                  <div class="media-body">
+                      <h5 class="mt-0 mb-1">Trigonometry From Ground Up</h5>
+                      Deconstructs the various mathematical ideas that make up Trigonometry and makes an attempt to give meaningful insight into standard results in Trigonometry.
+                  </div>
+              </li>
+              <hr>
+              <li class="media" onclick ="location.href='../articles/metaphorical-mind-music.html';">
+                <img class="mr-3" src="../PicsAudios/lightbulb-resized.png" alt="placeholder img">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">A Metaphorical Mind, With An Musical Illustration</h5>
+                    Introduces the Conceptual Metaphor Theory and its application to music as well as its implication for us.
+                </div>
+              </li> 
+              <hr>
+              <li class="media" onclick ="location.href='../articles/fundamental-forces.html';">
+                <img class="mr-3" src="../PicsAudios/atom-resized.jpg" alt="placeholder img">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">The Fundamental Forces</h5>
+                    A non-technical article about the Fundamental Forces and the Standard Model in physics. 
+                </div>
+              </li>           
+            </ul>
+        </div>
+      </div>
+
+      <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+    </div>
+
+    <!-- remember to make the texts responsive to screen sizes!!!! -->
+    
+    <script>
+      function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+      }
+      
+      function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+      }
+    </script>
+
+
+
+</html>

@@ -4,8 +4,8 @@
 }
 
 @keyframes text-render{
-    from{opacity:0; font-size: 3rem;}
-    to{opacity:1; font-size: 1.75rem;}
+    from{opacity:0;}
+    to{opacity:1;}
 }
 @keyframes text-render-smaller{
     from{opacity:0; font-size: 1.75rem;}
@@ -18,6 +18,35 @@
 @keyframes text-render-article{
     from{opacity:0;}
     to{opacity:1;}
+}
+@keyframes text-interact{
+    0%{font-size:1.75rem;}
+    50%{font-size:2.2rem;}
+    100% {font-size:1.75rem;}
+}
+
+.right-title-letter{
+    transition: 0.15s;
+}
+.right-title-letter:hover{
+    transform: translate(10px, 0);
+    cursor: default;
+    color:pink;
+}
+.left-title-letter{
+    transition: 0.15s;
+}
+.left-title-letter:hover{
+    transform: translate(-10px, 0px);
+    cursor:default;
+    color:pink;
+}
+.homepage-text{
+    transition: 0.2s;
+}
+.homepage-text:hover{
+    color:pink;
+    cursor: default;
 }
 
 html {
@@ -67,11 +96,23 @@ body{
 }
 article{
     font-family: "circular";
-    width: 55vw;
     text-align: justify;
-    position: relative;
-    transform: translate(22.5vw, 10vh);
+    position: absolute;
+    width: 60vw;
+    left: 20vw;
+    top: 10vh;
 }
+@media screen and (max-width: 900px) {
+    article{
+        font-family: "circular";
+        text-align: justify;
+        position: absolute;
+        width: 80vw;
+        left: 10vw;
+        top: 10vh;
+    }
+  }
+
 .music-body{
     height : 30px;
     width : 100%;
@@ -156,21 +197,36 @@ article{
 }
 
 .homepage-title{
-    position:absolute;
-    top:0;
+    position:static;
     left:0;
     width: 100vw;
-    transform: translate(0, 15vh);
+    height: 100vh;
+    transform: translate(0, 25vh);
     text-align: center;
     margin: 0;
+    margin-bottom: 25vh;
     letter-spacing: 5px;
 }
+@media screen and (max-height: 900px) {
+    .homepage-title{
+        position:static;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(0, 20vh);
+        text-align: center;
+        margin: 0;
+        margin-bottom: 25vh;
+        letter-spacing: 5px;
+    }
+  }
     #homepage-j{
         opacity: 0;
         animation: text-render;
         animation-duration: 1s;
         animation-delay: 0.3s;
         animation-fill-mode:forwards;
+        animation-iteration-count: 1;
     }
     #homepage-a{
         opacity: 0;
@@ -281,9 +337,18 @@ article{
 
 .media{
     margin: 10px;
-    width: 50vw;
+    width: 40vw;
     transition: 0.5s;
+    text-align: justify;
 }
+@media screen and (max-width: 900px) {
+    .media{
+        margin: 10px;
+        width: 70vw;
+        transition: 0.5s;
+        text-align: left;
+    }
+  }
 .media:hover{
     cursor: pointer;
     color: pink;
@@ -308,4 +373,18 @@ article{
     animation-duration: 0.5s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+
+.subpage-body{
+    position: absolute;
+    height:100vh;
+    transform: translate(0, 10vh);
+}
+
+.references{
+    text-align:left;
 }
