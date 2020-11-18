@@ -1,7 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face{
     font-family: "circular";
-    src: url('CircularStd-Medium.woff');
-}
+    src: url('CircularStd-Medium.woff');}
 
 @keyframes text-render{
     from{opacity:0;}
@@ -350,8 +353,9 @@ article{
     }
   }
 .media:hover{
+    font-size: 1.1rem;
     cursor: pointer;
-    color: pink;
+    color: pink !important; 
 }
 
 .references{
@@ -387,4 +391,21 @@ article{
 
 .references{
     text-align:left;
+}
+
+.project-title{
+    color: white;
+    background-color: transparent;
+    transition: 0.3s;
+    margin-top: 0.9rem; padding-left:0.2rem; padding-right:0.2rem; text-align: left;
+}
+
+.project-title:hover{
+    text-decoration: none;
+    color: #e3e3e3;
+}
+
+.article-description{
+    font-weight: lighter;
+    color: #d1d1d1;
 }

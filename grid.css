@@ -1,0 +1,52 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+@media screen and (max-width: 900px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: transparent;
+        padding: 10px;
+    }
+}
+
+.grid-item {
+    background-color: pink;
+    border: 1px solid pink;
+    width: 30vw;
+    margin-left: 1vw; margin-right: 1vw;
+    margin-top: 1vh; margin-bottom: 1vh;
+    border-radius: 3vw;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    .grid-item{
+        background-color: pink;
+        border: 1px solid pink;
+        width: 65vw;
+        margin-left: 1vw; margin-right: 1vw;
+        margin-top: 1vh; margin-bottom: 1vh;
+        border-radius: 3vw;
+        text-align: center;
+    }
+}
+
+.grid-image{
+    width: 100%;
+    height: auto;  
+    object-fit: cover; 
+    border-radius: 3vw;     
+}
+
+.project-description{
+    padding-left: 2rem; padding-right: 2rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    text-align: justify;
+}
