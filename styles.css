@@ -409,3 +409,13 @@ article{
     font-weight: lighter;
     color: #d1d1d1;
 }
+
+.block-equation{
+    display:block;
+    text-align:center;
+    margin-top: 10px; margin-bottom:10px;
+}
+
+.theorem-statement{
+    font-weight: 600;
+}
