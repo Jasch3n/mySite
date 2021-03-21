@@ -6,30 +6,71 @@
       <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.16.0/d3.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
       <link href="styles.css" rel="stylesheet">
+      <link href="overlay.css" rel="stylesheet">
+      <link href="text-slides.css" rel="stylesheet">
+      <link href="grid.css" rel="stylesheet">
       <title>home</title>
     </head>
 
-    <div class="container-fluid" id="index">
-      <div id="side-bar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="navitem" href="index.html">home</a> 
-        <a class="navitem" href="static/projects.html">projects</a>
-        <a class="navitem" href="static/articles.html">articles</a>
-        <a class="navitem" href="static/poetry.html">poetry</a>
-        <a class="navitem" href="static/about.html">about</a>
-      </div>
-      <div class="homepage-title">
-        <h3 id="homepage-j" class="left-title-letter">J</h3> <h3 id="homepage-a" class="right-title-letter">A</h3> <h3 id="homepage-s" class="left-title-letter">S</h3>
-        <h3 id="homepage-p" class="right-title-letter">P</h3> <h3 id="homepage-e" class="left-title-letter">E</h3> <h3 id="homepage-r" class="right-title-letter">R</h3>
-        <h3 id="homepage-c" class="left-title-letter">C</h3> <h3 id="homepage-h" class="right-title-letter">H</h3> <h3 id="homepage-e-2" class="left-title-letter">E</h3> 
-        <h3 id="homepage-n" class="right-title-letter">N</h3>
-        <h5 class="homepage-text">welcome to my space</h5>
-      </div>
-      
-      <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+    <div id="overlay-wrapper">
+      <canvas id="index-overlay-canvas"></canvas>
+      <canvas id="index-overlay-anim-canvas"></canvas>
+      <div>
+        <div class="container-fluid" id="index">
+          <div id="side-bar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="navitem" href="index.html">home</a> 
+            <a class="navitem" href="static/projects.html">projects</a>
+            <a class="navitem" href="static/articles.html">articles</a>
+            <a class="navitem" href="static/poetry.html">poetry</a>
+            <a class="navitem" href="static/about.html">about</a>
+          </div>
+          <div class="homepage-title">
+            <h3 id="homepage-j" class="left-title-letter">J</h3> <h3 id="homepage-a" class="right-title-letter">A</h3> <h3 id="homepage-s" class="left-title-letter">S</h3>
+            <h3 id="homepage-p" class="right-title-letter">P</h3> <h3 id="homepage-e" class="left-title-letter">E</h3> <h3 id="homepage-r" class="right-title-letter">R</h3>
+            <h3 id="homepage-c" class="left-title-letter">C</h3> <h3 id="homepage-h" class="right-title-letter">H</h3> <h3 id="homepage-e-2" class="left-title-letter">E</h3> 
+            <h3 id="homepage-n" class="right-title-letter">N</h3>
+            <h5 class="homepage-text">welcome to my space</h5>
+          </div>
+          <div id="index-biography" class="w-full md:max-w-1/2">
+            <h1>Hello &#128075;</h1>
+            <p>I am currently a freshman at Brown University yet to decide on a major. Nonetheless, my interests generally lie in 
+              &#x1F52C;theoretical physics, ♾️pure mathematics, &#x1F4BB;computer graphics, and &#x1F3AE;game development. Currently, I am a
+              fullstack developer for the Brown Entrepreneurship Program.
+            </p>
+            <h3 style="margin-top:1em">Projects</h3>
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img class="grid-image" src="https://placekitten.com/640/360">
+                </div>
+                <div class="project-description">
+                  <a style="text-decoration:none;" href="https://github.com/Jasch3n/quantum-toolkit"><h4 class="project-title">Quantum Toolkit (WIP)</h4></a>
+                    <p>A Python program to help visualize and conceptualize Quantum Mechanics. 
+                    Currently, the features include: Approximating solutions to Schrodinger's Equation for 1D potentials, graphing these solutions, and animating
+                    unitary time evolution of stationary as well as superimposed states.
+                    </p>
+                </div>
+              </div>
+              <!-- project 2 -->
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img class="grid-image" src="https://placekitten.com/640/360">
+                </div>
+                <div class="project-description">
+                  <a style="text-decoration:none;" href="https://github.com/Jasch3n/algv"><h4 class="project-title">Algorithm Visualization (WIP)</h4></a>
+                    <p>A next.js app to visualize some important graph algorithms via randomly generated examples.</p>
+                </div>
+              </div>
+          </div>
+        </div>
     </div>
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+  </div>
 
     <!-- remember to make the texts responsive to screen sizes!!!! -->
+    <script src="./static/js/indexCanvasDraw.js"></script>
+    <script src="./static/js/indexCanvasAnim.js"></script>
     
     <script>
       function openNav() {

@@ -1,0 +1,13 @@
+#overlay-wrapper {
+    position: relative;
+}
+
+#overlay-wrapper canvas, #index {
+    position: absolute;
+}
+
+#index-overlay-canvas {
+    z-index: 0;
+    /* height: 100%;
+    width: 100%; */
+}

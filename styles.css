@@ -27,6 +27,10 @@
     50%{font-size:2.2rem;}
     100% {font-size:1.75rem;}
 }
+@keyframes fadeout{
+    from{opacity:1;}
+    to{opacity:0;}
+}
 
 .right-title-letter{
     transition: 0.15s;
@@ -203,24 +207,28 @@ article{
     position:static;
     left:0;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 0;
     transform: translate(0, 25vh);
     text-align: center;
     margin: 0;
     margin-bottom: 25vh;
     letter-spacing: 5px;
+    animation: 0.5s fadeout ease-in-out 4s forwards;
 }
 @media screen and (max-height: 900px) {
     .homepage-title{
         position:static;
         left:0;
         width: 100vw;
-        height: 100vh;
+        /* height: 100vh; */
+        height: 0;
         transform: translate(0, 20vh);
         text-align: center;
         margin: 0;
         margin-bottom: 25vh;
         letter-spacing: 5px;
+        animation: 0.5s fadeout ease-in-out 5.5s forwards;
     }
   }
     #homepage-j{
