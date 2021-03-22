@@ -63,7 +63,7 @@ html {
 }
 
 #index{
-    overflow:hidden;
+    overflow:scroll;
 }
 .index-h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 .index-h2 { color:green; margin: 10px; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
