@@ -1,5 +1,5 @@
 const template = document.createElement('sidebar');
-const IS_ONLINE = true
+const IS_ONLINE = false
 
 if (IS_ONLINE) {
     template.innerHTML = `
