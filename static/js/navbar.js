@@ -1,13 +1,13 @@
 const template = document.createElement('sidebar');
-const IS_ONLINE = false
+const IS_ONLINE = true
 
 if (IS_ONLINE) {
     template.innerHTML = `
     <div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="navitem" href="mySite/index.html">home</a> 
-        <a class="navitem" href="mySite/static/writings.html">writings</a>
-        <a class="navitem" href="mySite/static/poetry.html">poetry</a>
+        <a class="navitem" href="/mySite/index.html">home</a> 
+        <a class="navitem" href="/mySite/static/writings.html">writings</a>
+        <a class="navitem" href="/mySite/static/poetry.html">poetry</a>
     </div>
     `
 } else {
