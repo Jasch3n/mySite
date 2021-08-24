@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <title>article template</title>
+</head>
+
+<div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="../static/js/navbar.js"></script>
+
+    <div class="rtcle">
+        <article style="top:25vh">
+            <h1 id="article-title" style="transition:0.2s">Cycle of Life</h1>
+            <p class="article-body">
+                Birds started singing again. <br>
+                Nature became green's domain. <br>
+                The Sun played hide-and-seek among leaves, <br>
+                and people played hide-and-seek with it beneath. <br>
+                Flowers welcomed bees into their bosoms, <br>
+                hoping their offsprings blossom. <br>
+                But if summer comes, <br>
+                can winter be far behind? <br>
+            </p>
+            <h6 style="margin-bottom: 10px;">June 8, 2021</h6>
+            <br>
+            <br>
+
+        </article>
+    </div>
+
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+    function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+    }
+
+
+</script>
+
+
+
+</html>

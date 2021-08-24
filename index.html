@@ -5,11 +5,14 @@
     <head>
       <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.16.0/d3.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-      <link href="styles.css" rel="stylesheet">
-      <link href="overlay.css" rel="stylesheet">
-      <link href="text-slides.css" rel="stylesheet">
-      <link href="projects.css" rel="stylesheet">
+      <link href="./static/css/styles.css" rel="stylesheet">
+      <link href="./static/css/overlay.css" rel="stylesheet">
+      <link href="./static/css/grid.css" rel="stylesheet">
+      <link href="./static/css/projects.css" rel="stylesheet">
+      <link href="./static/css/text-slides.css" rel="stylesheet">
+      <!-- <link href="./static/css/tailwind.css" rel="stylesheet"> -->
       <title>home</title>
+      <script src="quantities.js"></script>
     </head>
 
     <div id="overlay-wrapper">
@@ -17,14 +20,8 @@
       <canvas id="index-overlay-anim-canvas"></canvas>
       <div>
         <div class="container-fluid" id="index">
-          <div id="side-bar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="navitem" href="index.html">home</a> 
-            <a class="navitem" href="static/projects.html">projects</a>
-            <a class="navitem" href="static/articles.html">articles</a>
-            <a class="navitem" href="static/poetry.html">poetry</a>
-            <a class="navitem" href="static/about.html">about</a>
-          </div>
+          <div id="side-bar"></div>
+
           <div class="homepage-title">
             <h3 id="homepage-j" class="left-title-letter">J</h3> <h3 id="homepage-a" class="right-title-letter">A</h3> <h3 id="homepage-s" class="left-title-letter">S</h3>
             <h3 id="homepage-p" class="right-title-letter">P</h3> <h3 id="homepage-e" class="left-title-letter">E</h3> <h3 id="homepage-r" class="right-title-letter">R</h3>
@@ -33,59 +30,88 @@
             <h5 class="homepage-text">welcome to my space</h5>
           </div>
           <div id="index-biography" class="w-full md:max-w-1/2">
-            <h1>Hello &#128075;</h1>
-            <p>I am currently a freshman at Brown University yet to decide on a major. Nonetheless, my interests generally lie in 
-              &#x1F52C;theoretical physics, ♾️pure mathematics, &#x1F4BB;computer graphics, and &#x1F3AE;game development. Currently, I am a
-              fullstack developer for the Brown Entrepreneurship Program.
+            <h1 class="elegant-title">Hello! &#128075;</h1>
+            <p id="self-intro"> I am a sophomore studying Computer Engineering and Mathematical Physics at Brown University. I enjoy exploring my curiosity 
+              and creativity, and look forward to contributing to our world with technological innovations and scientific discoveries. On my free time you can find 
+              me reading books of all sorts, composing casual poetry, playing piano, or out and wandering about in nature.<br><br>
+              I keep an archive of my penmanship at <a href="/static/writings.html">writings</a> and <a href="/static/poetry.html">poems</a> :)
             </p>
-            <h3 style="margin-top:1em">Projects</h3>
+            <h1 class="elegant-title" style="margin-top:1em">Projects</h1>
+
+            <!-- project section! -->
             <div id="index-projects">
               <div class="project-item">
                 <div class="">
-                  <a style="text-decoration:none;" href="https://guarded-garden-19145.herokuapp.com/">
-                    <h4>📚<span class="project-title">Bist</span></h4>
+                  <a style="text-decoration:none;" href="#">
+                    <h4><span class="project-title">Baazl</span></h4>
                   </a>
-                  <p>A bookkeeping and journaling platform for personal readings. Note that, 
-                    due to Heroku's resource allocation mechanism, loading in the site will be
-                    slow and sometimes buggy. Be sure to refresh a few times if this happens.
-                  </p>
+                  <p>Social platform and recommendation engine for visual art.</p>
                 </div>
               </div>
+              <hr>
+              <div class="project-item">
+                <div class="">
+                  <a style="text-decoration:none;" href="https://bist-seven.vercel.app/">
+                    <h4><span class="project-title">Bist</span></h4>
+                  </a>
+                  <p>A bookkeeping and journaling platform for personal readings.</p>
+                </div>
+              </div>
+              <hr>
               <div class="project-item">
                 <div class="">
                   <a style="text-decoration:none;" href="https://ventureatbrown.com/">
-                    <h4>🔎<span class="project-title">Venture at Brown</span></h4>
+                    <h4><span class="project-title">Venture at Brown</span></h4>
                   </a>
                   <p>A resource guide for Brown and RISD students to navigate the entrepreneurial scene.</p>
                 </div>
               </div>
+              <hr>
               <div class="project-item">
                 <div class="">
                   <a style="text-decoration:none;" href="https://github.com/Jasch3n/quantum-toolkit">
-                    <h4>⚛️<span class="project-title">Quantum Toolkit</span></h4>
+                    <h4><span class="project-title">Quantum Toolkit</span></h4>
                   </a>
                   <p>A Python program to help visualize and conceptualize Quantum Mechanics. </p>
                 </div>
               </div>
+              <hr>
               <!-- project 2 -->
               <div class="project-item">
                 <div class="">
-                  <a style="text-decoration:none;" href="https://github.com/Jasch3n/algv">
-                    <h4>🤖<span class="project-title">Algorithm Visualization</span></h4>
+                  <a style="text-decoration:none;" href="https://algvi-jasch3n.vercel.app/">
+                    <h4><span class="project-title">Algorithm Visualization</span></h4>
                   </a>
                   <p>A next.js app to visualize some important graph algorithms via randomly generated examples.</p>
                 </div>
               </div>
-          </div>
+            </div>
+            
+            <!-- skill section! -->
+            <h1 class="elegant-title" style="margin-top:1rem;">Skills</h1>
+            <div style="margin-top:1rem;" id="index-skills">
+              <h4 class="skill-title">Programming Languages:</h4><div id="programming-languages">
+                <div class="skill-item-favorite">Haskell</div> <div class="skill-item">C++</div> <div class="skill-item">Pyret</div> 
+                <div class="skill-item">Racket</div> <div class="skill-item">ReasonML</div> <div class="skill-item">C</div> <div class="skill-item">C#</div>
+                <div class="skill-item">Java</div> <div class="skill-item">Python</div><div class="skill-item">HTML + CSS + JS</div>
+              </div>
+              <h4 class="skill-title">Technologies</h4><div id="technologies">
+                <div class="skill-item">React.js</div> <div class="skill-item">Next.js</div> <div class="skill-item">Unity</div>
+                <div class="skill-item">Tailwind CSS</div> <div class="skill-item">Google Firebase</div>
+                <div class="skill-item">SQL</div> <div class="skill-item">MongoDB</div> <div class="skill-item">Adobe Illustrator</div>
+                <div class="skill-item">Spark (Java)</div><div class="skill-item">Flask</div><div class="skill-item">Node.js</div> 
+              </div>
+            </div>
         </div>
     </div>
-    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+    <span id="nav-button" class="sidebar-open" onclick="openNav()">&#9776; nav</span>
   </div>
 
     <!-- remember to make the texts responsive to screen sizes!!!! -->
     <script src="./static/js/indexCanvasDraw.js"></script>
     <script src="./static/js/indexCanvasAnim.js"></script>
-    
+    <script src="./static/js/navbar.js"></script>
+
     <script>
       function openNav() {
         document.getElementById("side-bar").style.width = "200px";
@@ -94,6 +120,16 @@
       function closeNav() {
         document.getElementById("side-bar").style.width = "0";
       }
+
+      /*document.querySelectorAll(".project-title").forEach(elt => {
+        elt.addEventListener("mouseover", e => {
+          let rotationStr = e.target.style.transform;
+          console.log(typeof rotationStr)
+          if (rotationStr === "") e.target.style.transform = "rotate(360deg)";
+          else if (rotationStr.length == 12) e.target.style.transform = "rotate(360deg)";
+          else e.target.style.transform = "rotate(0deg)";
+        });
+      });*/ 
     </script>
 
 

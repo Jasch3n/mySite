@@ -6,6 +6,21 @@
     font-family: "circular";
     src: url('CircularStd-Medium.woff');}
 
+@font-face {
+    font-family: "eb-garamond";
+    src: url('EBGaramond-Medium.ttf');
+}
+
+@font-face {
+    font-family: "playfair";
+    src: url('PlayfairDisplay-Medium.ttf');
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("Montserrat-Regular.ttf");
+}
+
 @keyframes text-render{
     from{opacity:0;}
     to{opacity:1;}
@@ -32,13 +47,20 @@
     to{opacity:0;}
 }
 
+.elegant-title {
+    /* font-variant: small-caps; */
+    font-family: "eb-garamond";
+    /* font-size: "8rem"; */
+    /* font-weight: "600"; */
+}
+
 .right-title-letter{
     transition: 0.15s;
 }
 .right-title-letter:hover{
     transform: translate(10px, 0);
     cursor: default;
-    color:pink;
+    color:#ffc0cb;
 }
 .left-title-letter{
     transition: 0.15s;
@@ -63,7 +85,8 @@ html {
 }
 
 #index{
-    overflow:scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .index-h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 .index-h2 { color:green; margin: 10px; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
@@ -102,7 +125,7 @@ body{
     margin : 0;
 }
 article{
-    font-family: "circular";
+    font-family: "eb-garamond";
     text-align: justify;
     position: absolute;
     width: 60vw;
@@ -111,7 +134,7 @@ article{
 }
 @media screen and (max-width: 900px) {
     article{
-        font-family: "circular";
+        font-family: "eb-garamond";
         text-align: justify;
         position: absolute;
         width: 80vw;
@@ -363,7 +386,7 @@ article{
 .media:hover{
     font-size: 1.1rem;
     cursor: pointer;
-    color: pink !important; 
+    color: rgb(255, 194, 204) !important; 
 }
 
 .references{
@@ -414,8 +437,9 @@ article{
 }
 
 .article-description{
-    font-weight: lighter;
-    color: #d1d1d1;
+    font-family: "montserrat";
+    font-weight: 500;
+    color: #737373;
 }
 
 .block-equation{
@@ -426,4 +450,24 @@ article{
 
 .theorem-statement{
     font-weight: 600;
+}
+
+
+@keyframes nav-button-render {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+#nav-button {
+    opacity: 0;
+    animation: nav-button-render 0.5s ease-in-out 6.5s forwards;
+}
+
+#overlay-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+}
+
+.article-body {
+    font-family: "montserrat";
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <title>article template</title>
+</head>
+
+<div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="../static/js/navbar.js"></script>
+
+    <div class="rtcle">
+        <article style="top:25vh">
+            <h1 id="article-title" style="transition:0.2s">A Storm is Coming</h1>
+            <p class="article-body">
+                A cloud curiously wandered alone  <br>
+                When it saw a man dressed in red <br>
+                Lying on a sunlit meadow as bed. <br>
+                Among the bright yellow flowers, <br>
+                He claimed his throne. <br><br>
+
+                The loners stared at each other <br>
+                And did nothing but breathe; <br>
+                The man tried to say something, beneath, <br>
+                But gave up and turned towards the flowers <br>
+                That reminded him of his brother. <br><br>
+
+                A golden crown lay beside his head, <br>
+                Which was now perfectly still <br>
+                The cloud looked over the hill <br>
+                And saw more men dressed in red <br>
+                Lying on the sunlit meadow as bed. <br><br>
+            </p>
+            <h6 style="margin-bottom: 10px;">July 12, 2020</h6>
+            <br>
+            <br>
+
+        </article>
+    </div>
+
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+    function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+    }
+
+
+</script>
+
+
+
+</html>

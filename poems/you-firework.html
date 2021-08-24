@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <title>article template</title>
+</head>
+
+<div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="../static/js/navbar.js"></script>
+
+    <div class="rtcle">
+        <article class="" style="top:25vh">
+            <h1 id="article-title" style="transition:0.2s">You, or Firework</h1>
+            <p class="article-body">
+                You are a bright blossom<br>
+                when all around is wither and darkness.<br>
+                You are a radiant rainbow<br>
+                after a shelterless night in the storm.<br>
+                You see gold and glitter<br>
+                in the worthless and dull.<br>
+                You hear tones and harmony<br>
+                in the noisy and dissonant.<br>
+                But you rose to my sky like firework,<br>
+                turning into a transient flourish of light,<br>
+                beautiful and elegant,<br>
+                but fleeing from my sight—<br>
+            </p>
+            <h6 style="margin-bottom: 10px;">October 9, 2020</h6>
+            <br>
+            <br>
+
+        </article>
+    </div>
+
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+    function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+    }
+
+
+</script>
+
+
+
+</html>

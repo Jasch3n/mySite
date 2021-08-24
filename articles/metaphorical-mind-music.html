@@ -4,24 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../styles.css" rel="stylesheet">
+        <link href="../static/css/styles.css" rel="stylesheet">
         <title>A Metaphorical Mind</title>
     </head>
 
     <div class="container-fluid">
-      <div id="side-bar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="navitem" href="../index.html">home</a> 
-        <a class="navitem" href="../static/music2.html">music</a>
-        <a class="navitem" href="../static/articles.html">articles</a>
-        <a class="navitem" href="../static/poetry.html">poetry</a>
-        <a class="navitem" href="../static/about.html">about</a>
-
-      </div>
+      <div id="side-bar"></div>
+      <script src="../static/js/navbar.js"></script>
+      
       <div class="rtcle">
         <article>
             <h1 id="article-title" style = "transition:0.2s">A Metaphorical Mind, With A Musical Illustration</h1>
-            <p><em>&ldquo;Dying is a wild night and a new road.&rdquo; &ndash; Emily Dickinson</em></p>
+            <p><em>&ldquo;Dying is a wild night and a new road.&rdquo; </em>&ndash; Emily Dickinson</p>
             <p>Throughout history, authors and poets have extensively exploited the expressive power of metaphors in their works to convey certain feelings or attitudes as demonstrated by the line from Dickinson above. Artists have extensively used metaphorical symbols in their artworks to achieve similar tasks. However, starting from the late 80s, breakthroughs in the field of Cognitive Science have suggested that metaphors are more than literary and artistic tools &ndash; they are the building blocks of our perception and understanding of the world. As early as c.335 BC, Aristotle noted in his <em>Poetics </em>that &ldquo;A 'metaphorical term' involves the transferred use of a term that properly belongs to something else.&rdquo; (Aristotle, c.335 BC/1972) Aristotle&rsquo;s definition of the &lsquo;metaphorical term&rsquo; is general and not limited to the realm of the arts; it simply suggested that one term can be applied to another. It was not until more than 2,000 years later that his ideas would be empirically elaborated and tested.</p>
             <p>In 1980, George Lakoff and Mark Johnson published their magnum opus <em>Metaphors We Live By</em>, which established and extensively explored what is now known as the Conceptual Metaphor Theory (CMT). Lakoff and Johnson suggested that humans naturally understand an abstract concept in terms of some other concept that is more concrete and accessible as the core idea of their theory. The most concrete and basic knowledge of concepts is derived through embodied experiences such as grasping a cup and jumping up and down. The mapping between different concepts is defined as a &ldquo;conceptual metaphor&rdquo;, and conceptual metaphors help us break down high-level abstract concepts into more basic ones and thus facilitate our understanding of the world. (Johnson &amp; Lakoff 1980)</p>
             <p>To illustrate their point, Lakoff and Johnson gave the &ldquo;<span style="font-variant:small-caps;">argument</span> is <span style="font-variant:small-caps;">war</span>&rdquo; metaphor as an example. Since <span style="font-variant:small-caps;">argument</span> is an abstract concept, our brain partially structures the understanding of it in terms of a relatively more concrete concept that shares structural similarities&mdash;<span style="font-variant:small-caps;">war</span>. This is why expressions such as &ldquo;He <em>attacked </em>his opponent&rsquo;s positions&rdquo;, &ldquo;She <em>stood her ground</em>&rdquo;, &ldquo;Their points were <em>weak</em>&rdquo;, and &ldquo;She <em>won</em> the argument&rdquo; are construed as normal expressions. Of course, what is considered normal is dependent on the larger culture that an individual is situated in. In a pacifist culture where <span style="font-variant:small-caps;">war</span> is an obsolete concept, such expressions would most likely not be considered as normal, perhaps the concept of <span style="font-variant:small-caps;">argument</span> as we know it would not even exist.</p>
@@ -39,7 +33,7 @@
             <h8 style="font-size:small;">Written: September 3, 2020</h8>
             <br>
             <br>
-            <div class="references">
+            <div id="references">
                 <h4>References</h4>
                 <ol>
                     <li>Aristotle (1972) <em>Poetics</em>. (D.A. Russell and M. Winterbottom, Trans.) Oxford: Oxford University Press.</a></cite></li>

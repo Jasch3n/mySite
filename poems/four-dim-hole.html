@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <title>article template</title>
+</head>
+
+<div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="../static/js/navbar.js"></script>
+
+    <div class="rtcle">
+        <article style="top:25vh">
+            <h1 id="article-title" style="transition:0.2s">Four-Dimensional Hole</h1>
+            <p class="article-body">
+                There is a hole in my heart, <br>
+                looping around the end and the start. <br>
+                It exists without existing, <br>
+                like a sly gust of wind wandering. <br>
+                It is a ring of insanity, <br>
+                born from cruel eternity. <br>
+            </p>
+            <h6 style="margin-bottom: 10px;">June 8, 2021</h6>
+            <br>
+            <br>
+
+        </article>
+    </div>
+
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+    function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+    }
+
+
+</script>
+
+
+
+</html>

@@ -32,7 +32,7 @@ const drawRandomRect = (x, y) => {
     let randomColorStr;
     if (randNum <= 3) randomColorStr = "rgba(183,110,121, 1)";
     else if (randNum >= 4 && randNum <= 10) randomColorStr = "rgba(255,192,203, 1)"
-    // else randomColorStr = "rgba(250,250,210, 1)"
+    else randomColorStr = "rgba(250,250,210, 1)"
 
     if (randNum <= 5) {
         ctx.fillStyle = randomColorStr;

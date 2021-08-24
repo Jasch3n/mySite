@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <title>article template</title>
+</head>
+
+<div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="../static/js/navbar.js"></script>
+
+    <div class="rtcle">
+        <article style="top:25vh">
+            <h1 id="article-title" style="transition:0.2s">The Cloud Asked the Moon</h1>
+            <p class="article-body">
+                Moon! <br>
+                How looks the world from the summit of heaven?<br>
+                Do you see all the looks of admiration<br>
+                Piercing through the clouds?<br>
+                Do you cherish all that is at rest in relaxation,<br>
+                Under your light, dreaming aloud?<br>
+                Do you smell the hipocrisy in conversations,<br>
+                Where lovers take their hollow vows?<br>
+                Do you extend your embrace in exploration,<br>
+                Lighting the way to those who frown?<br><br>
+
+                What? I only see a blue sphere!<br>
+                Answered the Moon.<br>
+            </p>
+            <h6 style="margin-bottom: 10px;">July 19, 2020</h6>
+            <br>
+            <br>
+
+        </article>
+    </div>
+
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+    function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+    }
+
+
+</script>
+
+
+
+</html>

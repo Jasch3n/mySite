@@ -1,0 +1,92 @@
+/* PROJECTS SECTION */
+#index-projects {
+    margin-bottom: 3rem;
+    /* font-family: "playfair"; */
+}
+
+.project-item {
+    /* border-color: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px; */
+    font-family: "montserrat";
+    padding-left: 0px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    margin-bottom: 1.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.project-item:hover{
+    /* background-color: rgba(209, 209, 209, 1); */
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+#index-projects>hr{
+    border:1px solid rgba(255, 194, 204, 0.7);
+    border-radius: 5rem;
+}
+
+.project-title {
+    font-family: "montserrat";
+    font-variant: small-caps;
+    font-size: 1.35rem;
+    color: black;
+    /* font-style: italic; */
+    font-weight: 500;
+    transition: all;
+    transition-duration: 0.5s;
+    /* text-decoration: underline; */
+    /* rotation stuff */
+    display: inline-block;
+    transform-origin: center;
+    /* width: auto; */
+    padding-bottom: 5px; 
+    padding-right: 5px;
+
+}
+.project-title:hover {
+    color: rgb(255, 194, 204);
+    /* transform: rotate(360deg); */
+    /* text-decoration: underline; */
+}
+
+/* SKILLS SECTION */
+#index-skills {
+    margin-bottom:3rem;
+}
+
+#index-skills {
+    font-family: "montserrat";
+}
+
+.skill-item, .skill-item-favorite {
+    display: inline-block;
+    margin-right:5px;
+    margin-bottom:10px;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 7px;
+    padding: 0.5rem;
+    transition-property: color;
+    transition-duration: 0.6s;
+}
+.skill-item:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: default;
+}
+.skill-item-favorite:hover {
+    background-color: rgb(255, 194, 204);
+    font-weight: bold;
+    cursor: default;
+}
+
+.skill-title {
+    font-variant: small-caps;
+    font-weight: 500;
+    font-size: 1.35rem;
+    /* margin-bottom:3px; */
+}
+
