@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <title>APMA 1690</title>
+</head>
+
+<div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="../static/js/navbar.js"></script>
+
+    <div class="rtcle">
+        <article>
+            <h1 id="article-title" style="transition:0.2s; margin-bottom:30px;">Notes on Computational Statistics (Brown APMA 1690)</h1>
+            A brief summary of the major results from the course.
+            <h3>Pseudo-random number generation</h5>
+                Pick a prime number $m$ and some number $a$ such that $a\in \{2,\dots,m-1\}$. Pick a seed $R_o \in \{1,\dots m-1\}$. The sequence of pseudo-random numbers is then defined by
+                <span class="block-equation">$R_n = aR_{n-1}\mod m$</span> To test the "randomness" of our generated sequence, we can utilize the Law of Large Numbers. By this law we have that if $U$ is a uniformly distributed random variable on [0,1],
+                then $\bar U = \frac{1}{n}\sum_{i=1}^{n} h(U_i)$ converges to $E[h(U)]$ for any function $h$. Furthermore, we can run a hypothesis test on the observed value of $\bar U$ and determine if the observation is too unlikely if $U$ was truly
+                uniform [0,1].
+        </article>
+    </div>
+
+    <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+    function openNav() {
+        document.getElementById("side-bar").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-bar").style.width = "0";
+    }
+</script>
+
+
+
+</html>
