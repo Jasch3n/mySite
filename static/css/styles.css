@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face{
+@font-face {
     font-family: "circular";
-    src: url('CircularStd-Medium.woff');}
+    src: url('CircularStd-Medium.woff');
+}
 
 @font-face {
     font-family: "eb-garamond";
@@ -21,110 +21,190 @@
     src: url("Montserrat-Regular.ttf");
 }
 
-@keyframes text-render{
-    from{opacity:0;}
-    to{opacity:1;}
+@keyframes text-render {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-@keyframes text-render-smaller{
-    from{opacity:0; font-size: 1.75rem;}
-    to{opacity:1; font-size: 1rem;}
+
+@keyframes text-render-smaller {
+    from {
+        opacity: 0;
+        font-size: 1.75rem;
+    }
+    to {
+        opacity: 1;
+        font-size: 1rem;
+    }
 }
-@keyframes text-render-media{
-    from{opacity:0; font-size: 1.5rem;}
-    to{opacity:1; font-size: 1rem;}
+
+@keyframes text-render-media {
+    from {
+        opacity: 0;
+        font-size: 1.5rem;
+    }
+    to {
+        opacity: 1;
+        font-size: 1rem;
+    }
 }
-@keyframes text-render-article{
-    from{opacity:0;}
-    to{opacity:1;}
+
+@keyframes text-render-article {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-@keyframes text-interact{
-    0%{font-size:1.75rem;}
-    50%{font-size:2.2rem;}
-    100% {font-size:1.75rem;}
+
+@keyframes text-interact {
+    0% {
+        font-size: 1.75rem;
+    }
+    50% {
+        font-size: 2.2rem;
+    }
+    100% {
+        font-size: 1.75rem;
+    }
 }
-@keyframes fadeout{
-    from{opacity:1;}
-    to{opacity:0;}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .elegant-title {
     /* font-variant: small-caps; */
-    font-family: "eb-garamond";
+    font-family: "playfair";
     /* font-size: "8rem"; */
     /* font-weight: "600"; */
 }
 
-.right-title-letter{
+.elegant-title-center {
+    /* font-variant: small-caps; */
+    font-family: "playfair";
+    text-align: center;
+    margin-bottom: 5rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 194, 204);
+    font-size: 3em;
+}
+
+.right-title-letter {
     transition: 0.15s;
 }
-.right-title-letter:hover{
+
+.right-title-letter:hover {
     transform: translate(10px, 0);
     cursor: default;
-    color:#ffc0cb;
+    color: #ffc0cb;
 }
-.left-title-letter{
+
+.left-title-letter {
     transition: 0.15s;
 }
-.left-title-letter:hover{
+
+.left-title-letter:hover {
     transform: translate(-10px, 0px);
-    cursor:default;
-    color:pink;
+    cursor: default;
+    color: pink;
 }
-.homepage-text{
+
+.homepage-text {
     transition: 0.2s;
 }
-.homepage-text:hover{
-    color:pink;
+
+.homepage-text:hover {
+    color: pink;
     cursor: default;
 }
 
 html {
-  overflow-x: hidden;
-  height: 100%;
-  margin: 0; 
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
 }
 
-#index{
+#index {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.index-h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
-.index-h2 { color:green; margin: 10px; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
-.regular-courier {color:black; margin: 10px; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 
-.navbar{
-    background-color : SeaGreen;
+.index-h1 {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
 }
 
-.nav-item{
-    color : white;
+.index-h2 {
+    color: green;
+    margin: 10px;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
 }
 
-.navbar-brand{
-    font-weight : bold;
-    color : PaleGoldenRod;
+.regular-courier {
+    color: black;
+    margin: 10px;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
 }
-.index-intro{
-    text-align : center;
-    font-size : 5em;
-    margin : 0;
-    padding : 0;
+
+.navbar {
+    background-color: SeaGreen;
+}
+
+.nav-item {
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: PaleGoldenRod;
+}
+
+.index-intro {
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
     position: relative;
-    left : 50%;
-    top :190px;
-    transform : translate(-50%, 0%);
-
+    left: 50%;
+    top: 190px;
+    transform: translate(-50%, 0%);
 }
-body{
+
+body {
     height: 100%;
     /*background-image : url("plant3.jpg");*/
-    background-color:white;
-    background-repeat : no-repeat;
-    background-size : cover;
-    padding : 0;
-    margin : 0;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
-article{
+
+article {
     font-family: "eb-garamond";
     text-align: justify;
     position: absolute;
@@ -132,8 +212,9 @@ article{
     left: 20vw;
     top: 10vh;
 }
+
 @media screen and (max-width: 900px) {
-    article{
+    article {
         font-family: "eb-garamond";
         text-align: justify;
         position: absolute;
@@ -141,30 +222,31 @@ article{
         left: 10vw;
         top: 10vh;
     }
-  }
-
-.music-body{
-    height : 30px;
-    width : 100%;
 }
 
-.song1{
-    position : relative;
-    transform : translate(0%, 38%);
-    height : 200px;
-    width:200px;
-    margin : 0px;
-}
-.song2{
-    position : relative;
-    left : 300px;
-    top : -124px;
-    height : 200px;
-    width:200px;
-    margin : 0px;
+.music-body {
+    height: 30px;
+    width: 100%;
 }
 
-.navitem{
+.song1 {
+    position: relative;
+    transform: translate(0%, 38%);
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+}
+
+.song2 {
+    position: relative;
+    left: 300px;
+    top: -124px;
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+}
+
+.navitem {
     font-size: 20px;
     display: block;
     padding: 6px;
@@ -174,10 +256,9 @@ article{
     color: white;
     background-color: transparent;
     transition: 0.3s;
-
 }
 
-.navitem:hover{
+.navitem:hover {
     text-decoration: none;
     color: #e3e3e3;
 }
@@ -195,21 +276,22 @@ article{
     padding-top: 60px;
 }
 
-.sidebar-open{
+.sidebar-open {
     position: absolute;
-    top:-20px;
-    font-family: "circular"; 
-    font-size:20px; 
-    cursor:pointer; 
-    padding: 10px; 
+    top: -20px;
+    font-family: "circular";
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
     padding-top: 50px;
     transition: 0.3s;
 }
-.sidebar-open:hover{
+
+.sidebar-open:hover {
     color: pink;
 }
 
-.closebtn{
+.closebtn {
     font-size: 30px;
     color: white;
     height: 50px;
@@ -221,14 +303,14 @@ article{
     transition: 0.3s;
 }
 
-.closebtn:hover{
+.closebtn:hover {
     text-decoration: none;
     color: #e3e3e3;
 }
 
-.homepage-title{
-    position:static;
-    left:0;
+.homepage-title {
+    position: static;
+    left: 0;
     width: 100vw;
     /* height: 100vh; */
     height: 0;
@@ -239,10 +321,11 @@ article{
     letter-spacing: 5px;
     animation: 0.5s fadeout ease-in-out 4s forwards;
 }
+
 @media screen and (max-height: 900px) {
-    .homepage-title{
-        position:static;
-        left:0;
+    .homepage-title {
+        position: static;
+        left: 0;
         width: 100vw;
         /* height: 100vh; */
         height: 0;
@@ -253,102 +336,111 @@ article{
         letter-spacing: 5px;
         animation: 0.5s fadeout ease-in-out 5.5s forwards;
     }
-  }
-    #homepage-j{
-        opacity: 0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 0.3s;
-        animation-fill-mode:forwards;
-        animation-iteration-count: 1;
-    }
-    #homepage-a{
-        opacity: 0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 0.5s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-s{
-        opacity: 0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 0.7s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-p{
-        opacity: 0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 0.9s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-e{
-        opacity: 0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 1.1s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-r{
-        padding-bottom: 45px;
-        opacity: 0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 1.3s;
-        animation-fill-mode:forwards;
-    }
+}
 
-    #homepage-c{
-        opacity:0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 2.0s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-h{
-        opacity:0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 1.8s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-e-2{
-        opacity:0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 1.6s;
-        animation-fill-mode:forwards;
-    }
-    #homepage-n{
-        opacity:0;
-        animation: text-render;
-        animation-duration: 1s;
-        animation-delay: 1.4s;
-        animation-fill-mode:forwards;
-    }
+#homepage-j {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 
-    .homepage-text{
-        opacity:0;
-        animation: text-render-smaller;
-        animation-duration: 2s;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-        overflow: hidden;
-        width: 100vw;
-        font-family: "circular";
-        text-align: center;
-        position: absolute;
-        top:0;
-        left:0;
-        transform: translate(0, 258px);
-        font-style: italic;
-        font-weight: 100;
-        font-size: 1rem;
-    }
+#homepage-a {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
 
-.subpage-title{
-    opacity:0;
+#homepage-s {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-p {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-e {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 1.1s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-r {
+    padding-bottom: 45px;
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-c {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 2.0s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-h {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-e-2 {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+#homepage-n {
+    opacity: 0;
+    animation: text-render;
+    animation-duration: 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+.homepage-text {
+    opacity: 0;
+    animation: text-render-smaller;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    width: 100vw;
+    font-family: "circular";
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 258px);
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.subpage-title {
+    opacity: 0;
     animation: text-render;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
@@ -358,8 +450,8 @@ article{
     transform: translate(15%, 40px);
 }
 
-.article-list{
-    opacity:0;
+.article-list {
+    opacity: 0;
     animation: text-render-media;
     animation-duration: 0.5s;
     animation-delay: 1.2s;
@@ -369,31 +461,33 @@ article{
     transform: translate(15%, 60px);
 }
 
-.media{
+.media {
     margin: 10px;
     width: 40vw;
     transition: 0.5s;
     text-align: justify;
 }
+
 @media screen and (max-width: 900px) {
-    .media{
+    .media {
         margin: 10px;
         width: 70vw;
         transition: 0.5s;
         text-align: left;
     }
-  }
-.media:hover{
-    font-size: 1.1rem;
-    cursor: pointer;
-    color: rgb(255, 194, 204) !important; 
 }
 
-.references{
+.media:hover {
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: rgb(255, 194, 204) !important;
+}
+
+.references {
     font-family: "circular";
 }
 
-.about{
+.about {
     font-size: 10px;
     font-family: "circular";
     width: 55vw;
@@ -402,61 +496,69 @@ article{
     transform: translate(22.5vw, 10vh);
 }
 
-.rtcle{
-    opacity:0;
+.rtcle {
+    opacity: 0;
     animation: text-render-article;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
-.container-fluid{
+.container-fluid {
     height: 100vh;
 }
 
-.subpage-body{
+.subpage-body {
     position: absolute;
-    height:100vh;
+    height: 100vh;
     transform: translate(0, 10vh);
 }
 
-.references{
-    text-align:left;
+.references {
+    text-align: left;
 }
 
-.project-title{
+.project-title {
     color: white;
     background-color: transparent;
     transition: 0.3s;
-    margin-top: 0.9rem; padding-left:0.2rem; padding-right:0.2rem; text-align: left;
+    margin-top: 0.9rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    text-align: left;
 }
 
-.project-title:hover{
+.project-title:hover {
     text-decoration: none;
     color: #e3e3e3;
 }
 
-.article-description{
+.article-description {
     font-family: "montserrat";
     font-weight: 500;
     color: #737373;
 }
 
-.block-equation{
-    display:block;
-    text-align:center;
-    margin-top: 10px; margin-bottom:10px;
+.block-equation {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.theorem-statement{
+.theorem-statement {
     font-weight: 600;
 }
 
-
 @keyframes nav-button-render {
-    from {opacity: 0;}
-    to {opacity: 100;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
 }
+
 #nav-button {
     opacity: 0;
     animation: nav-button-render 0.5s ease-in-out 6.5s forwards;
@@ -470,4 +572,9 @@ article{
 
 .article-body {
     font-family: "montserrat";
+}
+
+.normal-text {
+    font-family: "montserrat";
+    font-weight: 500;
 }
