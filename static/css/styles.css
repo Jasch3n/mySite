@@ -93,9 +93,10 @@
     /* font-variant: small-caps; */
     font-family: "playfair";
     text-align: center;
-    margin-bottom: 5rem;
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 194, 204);
+    margin-bottom: 1.5rem;
+    color:#0080FF;
+    /* text-decoration: underline;
+    text-decoration-color: #ffc0cb; */
     font-size: 3em;
 }
 
@@ -463,6 +464,7 @@ article {
 
 .media {
     margin: 10px;
+    margin-left: 0px;
     width: 40vw;
     transition: 0.5s;
     text-align: justify;
@@ -577,4 +579,9 @@ article {
 .normal-text {
     font-family: "montserrat";
     font-weight: 500;
+}
+
+.normal-text-bold {
+    font-family: "montserrat";
+    font-weight: 700;
 }

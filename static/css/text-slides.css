@@ -16,6 +16,18 @@
     /* overflow-x: hidden; */
 }
 
+@media only screen and (max-width: 900px) {
+    #index-biography {
+        max-width: 80vw;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #index-biography {
+        max-width: 68vw;
+    }
+  }
+
 #self-intro {
     font-family: "montserrat";
 }
