@@ -21,6 +21,11 @@
     src: url("../public/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: "monarda";
+    src: url("Monarda.ttf");
+}
+
 @keyframes text-render {
     from {
         opacity: 0;
@@ -91,10 +96,10 @@
 
 .elegant-title-center {
     /* font-variant: small-caps; */
-    font-family: "playfair";
+    font-family: "monarda";
     text-align: center;
     margin-bottom: 1.5rem;
-    color:#0080FF;
+    color: #ffc0cb;
     /* text-decoration: underline;
     text-decoration-color: #ffc0cb; */
     font-size: 3em;
