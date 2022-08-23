@@ -3,22 +3,22 @@
 @tailwind utilities;
 @font-face {
     font-family: "circular";
-    src: url('CircularStd-Medium.woff');
+    src: url('../public/CircularStd-Medium.woff');
 }
 
 @font-face {
     font-family: "eb-garamond";
-    src: url('EBGaramond-Medium.ttf');
+    src: url('../public/EBGaramond-Medium.ttf');
 }
 
 @font-face {
     font-family: "playfair";
-    src: url('PlayfairDisplay-Medium.ttf');
+    src: url('../public/PlayfairDisplay-Medium.ttf');
 }
 
 @font-face {
     font-family: "montserrat";
-    src: url("Montserrat-Regular.ttf");
+    src: url("../public/Montserrat-Regular.ttf");
 }
 
 @keyframes text-render {
