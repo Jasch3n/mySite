@@ -23,7 +23,12 @@
 
 @font-face {
     font-family: "monarda";
-    src: url("Monarda.ttf");
+    src: url("../public/Monarda.ttf");
+}
+
+@font-face {
+    font-family: "shelley";
+    src: url("../public/shelley.otf");
 }
 
 @keyframes text-render {
@@ -57,14 +62,6 @@
     }
 }
 
-@keyframes text-render-article {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 @keyframes text-interact {
     0% {
@@ -87,22 +84,26 @@
     }
 }
 
-.elegant-title {
-    /* font-variant: small-caps; */
-    font-family: "playfair";
-    /* font-size: "8rem"; */
-    /* font-weight: "600"; */
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
-.elegant-title-center {
-    /* font-variant: small-caps; */
-    font-family: "monarda";
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #ffc0cb;
-    /* text-decoration: underline;
-    text-decoration-color: #ffc0cb; */
-    font-size: 3em;
+video {
+    object-fit: cover;
+    width: 100%;
+}
+
+.cursive-elegant-title {
+    font-family:"shelley";
+    font-size: 3.7rem;
+}
+.elegant-title {
+    font-family: "eb-garamond";
+    margin-bottom: 10px;
+    /* color: #ffc0cb; */
+    font-size: 2rem;
 }
 
 .right-title-letter {
@@ -141,6 +142,7 @@ html {
 }
 
 #index {
+    /* background-color: rgba(255, 199, 69, 0.25); */
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -208,26 +210,6 @@ body {
     background-size: cover;
     padding: 0;
     margin: 0;
-}
-
-article {
-    font-family: "eb-garamond";
-    text-align: justify;
-    position: absolute;
-    width: 60vw;
-    left: 20vw;
-    top: 10vh;
-}
-
-@media screen and (max-width: 900px) {
-    article {
-        font-family: "eb-garamond";
-        text-align: justify;
-        position: absolute;
-        width: 80vw;
-        left: 10vw;
-        top: 10vh;
-    }
 }
 
 .music-body {
@@ -467,6 +449,10 @@ article {
     transform: translate(15%, 60px);
 }
 
+a>div>h5 {
+    color: black;
+}
+
 .media {
     margin: 10px;
     margin-left: 0px;
@@ -485,14 +471,12 @@ article {
 }
 
 .media:hover {
-    font-size: 1.1rem;
+    font-size: 1.02rem;
     cursor: pointer;
     color: rgb(255, 194, 204) !important;
 }
 
-.references {
-    font-family: "circular";
-}
+
 
 .about {
     font-size: 10px;
@@ -501,14 +485,6 @@ article {
     text-align: right;
     position: relative;
     transform: translate(22.5vw, 10vh);
-}
-
-.rtcle {
-    opacity: 0;
-    animation: text-render-article;
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
 }
 
 .container-fluid {
@@ -568,17 +544,13 @@ article {
 
 #nav-button {
     opacity: 0;
-    animation: nav-button-render 0.5s ease-in-out 6.5s forwards;
+    animation: nav-button-render 0.5s ease-in-out 5.6s forwards;
 }
 
 #overlay-wrapper {
     height: 100vh;
     width: 100vw;
     overflow-y: hidden;
-}
-
-.article-body {
-    font-family: "montserrat";
 }
 
 .normal-text {
@@ -589,4 +561,62 @@ article {
 .normal-text-bold {
     font-family: "montserrat";
     font-weight: 700;
+}
+
+.index-page-poem {
+    font-weight: 400;
+    padding-top: 10px;
+    font-family:'Courier New', Courier, monospace
+}
+
+.index-poem-highlight {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #947af0;
+    text-decoration-thickness: 3px;
+    font-size: 1.25rem;
+}
+
+#intro-container {
+    margin-bottom: 2rem;
+    text-align:center;
+}
+
+.featured {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#featured-writings {
+    margin-top: 2rem; margin-bottom: 2rem;
+}
+
+#featured-projects {
+    margin-top: 2rem; margin-bottom: 2rem;
+}
+
+#subtitle {
+    font-weight: 300;
+    font-family: 'montserrat';
+    font-style: italic;
+    font-size:larger;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* Create two equal columns that sits next to each other */
+.image-column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+.image-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    /* max-width:300px;
+    max-height:300px; */
 }

@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <head>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <title>about</title>
-    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="container-fluid">
-      <div id="side-bar"></div>
-      <script src="./js/navbar.js"></script>
-      
-      <div class="rtcle">
-        <article>
-            <h1>about me</h1>
-            <p>Hi. I am Jasper, a student of professors as well as the world around me. I find inspirations in a range of things in everyday life when I least
-                expect them. I will use this website to record and share what I find interesting.</p>
-            <p style="color: #666666; font-size: 13px;">contact: <br>jasper20020202@gmail.com </p>
-            <br>
-            <br>
-         </article>
-        </div>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/article.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
+  <title>about</title>
+</head>
 
-      <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+<body style="background:rgba(157, 202, 245, 0.3);">
+  <div class="container-fluid">
+    <div id="side-bar"></div>
+    <script src="./js/navbar.js"></script>
+
+    <div class="article-container">
+      <article>
+        <h1>About Jasper</h1>
+        <p>The world is full of beautiful yet daunting mysteries. Math is my way of tackling them. I
+          study <span class="emphasis">Applied Math</span> in connection to <span class="emphasis">Physics and
+            Neuroscience</span> at <a href="https://www.brown.edu/">Brown University</a> (class of
+          2024). </p>
+          
+          <p> I am passionate about working on problems in <span class="emphasis">augmented & artificial intelligence</span>,
+            <span class="emphasis">nuclear & renewable energy</span>, and all sorts of <span class="emphasis">dynamical systems</span> (e.g. brain, economy, fluids),
+            and I am open to both industry and academia opportunities. </p>
+            
+          <!-- <p>I aim to understand physical and neural systems from first principles. An important part
+            of this is to find bridges between different hierarchies of complexity -- atom to molecule,
+            neuron to brain. Precise mathematical descriptions and rigorous quantitative
+            methods go a long way toward these goals.</p>
+
+          <p>I am also interested to explore and learn subjects beyond Math, Physics and
+          Neuroscience — for example, cinematography, literature, design. What makes a good film, novel,
+          or design at an artistic level? How might these relate to human neural structure at a scientific
+          level? I believe that there is something to be learned in just almost anything. So I am always
+          open to chatting and exchanging ideas! </p> -->
+          
+          <p>Outside of academic pursuits, I like to take photos and videos, watch movies, and spend too much
+          time on picking outfits.
+        </p>
+        <p style="font-style:italic;">My resume is available upon <a href="mailto:jiapeng_chen@brown.edu">request</a>.
+          Please feel free to reach out!</p>
+        <br>
+        <br>
+      </article>
     </div>
+</body>
 
-    <!-- remember to make the texts responsive to screen sizes!!!! -->
-    
-    <script>
-      function openNav() {
-        document.getElementById("side-bar").style.width = "200px";
-      }
-      
-      function closeNav() {
-        document.getElementById("side-bar").style.width = "0";
-      }
-    </script>
+
+<span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+  function openNav() {
+    document.getElementById("side-bar").style.width = "200px";
+  }
+
+  function closeNav() {
+    document.getElementById("side-bar").style.width = "0";
+  }
+</script>
 
 
 

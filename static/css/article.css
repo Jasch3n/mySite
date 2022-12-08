@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "eb-garamond";
+    src: url('jel;sadlk.ttf');
+}
+
+#date {
+    font-size:medium;
+    font-style: italic;
+}
+
+article {
+    font-family: "eb-garamond";
+    position: relative;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    article {
+        width: 100vw;
+        padding-left: 20px; padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    article {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+@keyframes text-render-article {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#article-container {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: text-render-article;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.references {
+    font-family: "circular";
+    text-align: left;
+}
+
+article>p {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+

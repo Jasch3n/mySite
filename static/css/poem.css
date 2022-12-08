@@ -1,0 +1,43 @@
+@keyframes text-render-poem {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#poem-container {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: text-render-poem;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+article {
+    font-family: "eb-garamond";
+    position: relative;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    article {
+        width: 100vw;
+        padding-left: 20px; padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    article {
+        width: 800px;
+        margin-left: 200px;
+    }
+}
+
+article>p {
+    /* font-family:'Courier New', Courier, monospace; */
+    font-size: 1.4rem;
+}
