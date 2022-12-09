@@ -62,7 +62,6 @@
     }
 }
 
-
 @keyframes text-interact {
     0% {
         font-size: 1.75rem;
@@ -87,7 +86,8 @@
 img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto\9;
+    /* ie8 */
 }
 
 video {
@@ -96,9 +96,10 @@ video {
 }
 
 .cursive-elegant-title {
-    font-family:"shelley";
+    font-family: "shelley";
     font-size: 3.7rem;
 }
+
 .elegant-title {
     font-family: "eb-garamond";
     margin-bottom: 10px;
@@ -476,8 +477,6 @@ a>div>h5 {
     color: rgb(255, 194, 204) !important;
 }
 
-
-
 .about {
     font-size: 10px;
     font-family: "circular";
@@ -566,11 +565,11 @@ a>div>h5 {
 .index-page-poem {
     font-weight: 400;
     padding-top: 10px;
-    font-family:'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace
 }
 
 .index-poem-highlight {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color: #947af0;
@@ -580,40 +579,49 @@ a>div>h5 {
 
 #intro-container {
     margin-bottom: 2rem;
-    text-align:center;
+    text-align: center;
 }
 
 .featured {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #featured-writings {
-    margin-top: 2rem; margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-#featured-projects {
-    margin-top: 2rem; margin-bottom: 2rem;
+#featured-studies {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#featured-photos {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #subtitle {
     font-weight: 300;
     font-family: 'montserrat';
     font-style: italic;
-    font-size:larger;
+    font-size: larger;
 }
 
 .image-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+}
 
-  /* Create two equal columns that sits next to each other */
+
+/* Create two equal columns that sits next to each other */
+
 .image-column {
     flex: 50%;
     padding: 0 4px;
-  }
-  
+}
+
 .image-column img {
     margin-top: 8px;
     vertical-align: middle;
