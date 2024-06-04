@@ -1,5 +1,5 @@
 const template = document.createElement('sidebar');
-const IS_ONLINE = false
+const IS_ONLINE = true
 
 template.innerHTML = `
     <div>
@@ -18,7 +18,7 @@ if (IS_ONLINE) {
         <a class="navitem" href="/mySite/index.html">home</a> 
         <a class="navitem" href="/mySite/static/writings.html">writings</a>
         <a class="navitem" href="/mySite/static/poetry.html">poetry</a>
-        <a class="navitem" href="/mySite/static/about.html">about</a>
+        <a class="navitem" href="/mySite/static/cv.html">academic cv</a>
     </div>
     `
 } else {
@@ -29,7 +29,7 @@ if (IS_ONLINE) {
         <a class="navitem" href="/index.html">home</a> 
         <a class="navitem" href="/static/writings.html">writings</a>
         <a class="navitem" href="/static/poetry.html">poetry</a>
-        <a class="navitem" href="/static/about.html">about</a>
+        <a class="navitem" href="/static/cv.html">academic cv</a>
     </div>
     `
 }

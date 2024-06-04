@@ -429,22 +429,22 @@ body {
 }
 
 .subpage-title {
-    opacity: 0;
+    /* opacity: 0;
     animation: text-render;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     font-family: "circular";
     position: relative;
     transform: translate(15%, 40px);
 }
 
 .article-list {
-    opacity: 0;
+    /* opacity: 0;
     animation: text-render-media;
     animation-duration: 0.5s;
     animation-delay: 1.2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     font-family: "circular";
     position: relative;
     transform: translate(15%, 60px);
@@ -587,24 +587,35 @@ a>div>h5 {
 }
 
 #featured-writings {
+    text-align:center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 #featured-studies {
+    text-align:center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 #featured-photos {
+    text-align:center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#insta-embed {
+    width:100%;
+    margin:auto;
 }
 
 #subtitle {
     font-weight: 300;
+    color:#B1BCA0;
     font-family: 'montserrat';
-    font-style: italic;
     font-size: larger;
 }
 

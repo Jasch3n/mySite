@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/cv.css" rel="stylesheet">
+  <title>Jasper Chen</title>
+</head>
+
+<div class="cv-container">
+  <div id="side-bar"></div>
+  <script src="./js/navbar.js"></script>
+
+  <div class="cv-body">
+    <div class="box">
+        <div class="caption">
+            <h2 class="cv-title">Jiapeng (Jasper) Chen</h2> 
+            <h5 style="color:gray" class="cv-title">Doctoral Student at Stanford University, Department of Geophysics</h5>
+            <h5 style="color:gray" class="cv-title">email: jiapchen@stanford.edu</h5>
+        </div>
+        
+        <div id="portrait">
+            <img src="../PicsAudios/jasper.jpg">
+          </div>
+        <div class="caption">
+            <div style="margin-bottom:1rem">
+                <h4 style="margin-bottom:0.2rem">Education</h4>
+                Sc.B. in Applied Mathematics with Honors, Brown University. (2020-2024)<br>
+                A.B. in Computer Science, Brown University. (2020-2024)
+            </div>
+            
+            <div style="margin-bottom:1rem">
+                <h4 style="margin-bottom:0.2rem">Research Experience</h4>
+                <div style="margin-bottom:0.5rem">
+                    <span style="font-weight:600">Brown University</span>, Department of Earth, Environmental, and Planetary Sciences. (2023-)<br> Advanced the use of 
+                information for predictability quantification in ensemble climate models and used it to interpret the signal-to-noise paradox. 
+                </div>
+                
+                <div style="margin-bottom:0.5rem">
+                    <span style="font-weight:600">University of Pennsylvania</span>, Perelman School of Medicine. (2023) <br>
+                    Developed an autoencoder based on the U-Net trained on a small dataset to perform attenuation correction in PET/CT imaging.
+                </div>
+                
+                <div style="margin-bottom:0.5rem">
+                    <span style="font-weight:600">Brown University</span>, School of Engineering. (2022-) <br>
+                    Developed a Chebyshev pseudospectral method to solve a fourth-order linear stability problem arising from an active shear flow of rod-like molecules.
+                </div>
+                
+            </div>
+            
+        </div>
+      </div>
+  </div>
+
+  <span class="sidebar-open" onclick="openNav()">&#9776; nav</span>
+</div>
+
+<!-- remember to make the texts responsive to screen sizes!!!! -->
+
+<script>
+  function openNav() {
+    document.getElementById("side-bar").style.width = "200px";
+  }
+
+  function closeNav() {
+    document.getElementById("side-bar").style.width = "0";
+  }
+</script>
+
+
+
+</html>
